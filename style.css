@@ -1,0 +1,141 @@
+*,
+::before,
+::after{
+    block-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: "Red Hat Display";
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-size: no-repeat center center fixed; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    width: 270px;
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+
+}
+.top-container{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25em;
+    
+}
+.order, .summary{
+    padding: 0, 1.25em;
+}
+.hero{
+    width: 100%;
+}
+.order{
+    font-weight: 900;
+    font-size: 1.25em;
+    color: hsl(223, 47%, 23%);
+
+}
+.plan-container-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    /* padding: 0;
+    margin: 0; */
+}   
+
+.plan-container{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px, 20px, 20px, 20px;
+    border-radius: 5px;
+    align-self: center;
+
+    width: 80%;
+}
+.plan-container-1{
+
+
+}
+.summary, .price{
+    font-weight: 600;
+    font-size: .75rem;
+    color: hsl(224, 23%, 55%);
+   
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    
+}
+
+.pay-button, .cancel{
+    width: 85%;
+    align-self: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: .75em;
+    border: none;
+}
+.pay-button{
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+}
+
+.annual-summary, .price{
+    margin: 0;
+    padding: 0;
+}
+.annual-plan{
+    font-size: .75em;
+    font-weight: 900;
+    padding: 0;
+    margin-bottom: .25em;
+}
+a{
+    font-size: .70em;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+.music-note{
+    width: 40px;
+}
+.cancel{
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+}
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+a:hover{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+.pay-button:hover{
+   background-color: hsl(224, 23%, 55%);
+}
